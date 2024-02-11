@@ -1,6 +1,7 @@
 # Zip.rs
 
-Zip.rs is a simple library for writing uncompressed zip files. 
+Zip.rs is a simple library for writing uncompressed zip files. This project 
+has zero dependencies.
 
 ## Example
 
