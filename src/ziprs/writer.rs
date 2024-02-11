@@ -1,5 +1,5 @@
-use super::{crc32::crc32, File};
-use super::{file::LOCAL_FILE_ENTRY_MIN_VERSION};
+use super::File;
+use super::file::LOCAL_FILE_ENTRY_MIN_VERSION;
 
 const CENTRAL_FILE_HEADER_IDENTIFIER: u32 = 0x02014b50;
 const CENTRAL_FILE_HEADER_VERSION: u16 = LOCAL_FILE_ENTRY_MIN_VERSION;

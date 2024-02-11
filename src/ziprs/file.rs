@@ -14,18 +14,23 @@ pub struct File {
 
 
 impl File {
+
+    #[allow(unused)]
     pub fn new() -> Self {
         File {
             name: String::new(),
             content: Vec::new()
         }
     }
+
+    #[allow(unused)]
     pub fn from(name: &str, content: Vec<u8>) -> Self {
         File {
             name: name.to_string(),
             content: content
         }
     }
+
     pub fn calculate_central_directory_size(self: &Self) -> usize {
         46 + self.get_name_size()
     }
