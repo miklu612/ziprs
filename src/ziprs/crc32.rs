@@ -3,7 +3,7 @@
 pub fn crc32(content: &Vec<u8>) -> u32 {
 
     let mut crc: u32 = 0xFFFFFFFF;
-	
+
     for i in 0..content.len()  {
         let mut byte = content[i];
         for _ in 0..8 {
@@ -14,7 +14,7 @@ pub fn crc32(content: &Vec<u8>) -> u32 {
             }
             byte = byte >> 1;
         }
-	}
-	
+    }
+    
     !crc
 }
